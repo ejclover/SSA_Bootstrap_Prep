@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+
+	<!-- IE Edge Meta Tag ==> Forces Internet Explorer to use its latest rendering mode. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Viewport to avoid shrinking of text on mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Include JS -->
+<scripted src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+
+	<title>Intro to Bootstrap</title>
+</head>
+<body>
+
+<!-- nav bar 
+Create a div classed 'navbar navbar-default navbar-static-top'. Inside of that div create another div classed 'container'. Lastly, add an anchor tag within the inner div. This anchor tag will have a class of 'navbar-brand' and the text visible to the user should read 'ScritEd Summer Academy'. Close your anchor tag in this section but the two div tags should be the last tags for the nav bar section (after the 'collapsible navbar' section.)
+-->
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a href="#" class="navbar-brand">Chinnell's site</a>
+
+
+		<!-- Create a dropdown button
+		button with a type of 'button', classed as 'navbar-toggle', data-toggle='collapse', and data-target='#example1'. The data-target will point to the collapsible navbar below.
+		 -->
+
+
+
+		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example1">
+
+
+
+		 	<!-- Add three span tags classed 'icon-bar' to make lines in the button and close the button tag after. -->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+
+		</button>
+
+		<!-- Collapsible Navbar
+		Create a div classed 'collapse navbar-collapse' and an id of 'example1'. Within this div add an unordered list classed 'nav navbar-nav navbar-right'. The 4 list items should also be anchor tags that take us to google.com, yahoo.com, bing.com, and duckduckgo.com.
+
+		example of list item: <li><a href="examplesite.com">Example</a></li>
+		 -->
+
+			<div class="collapse navbar-collapse" id="example1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">More info</a></li>
+				</ul>
+			</div>
+
+<!-- Now you can close the 'navbar navbar-default navbar-static-top' and 'container' div tags from this section -->
+		</div>
+	</div>
+
+
+
+<!-- header in -->
+	<header class="bgimage">
+		<div class="container-fluid">
+			<h1 id="titled" class="text-center">H1 tag wrapped in div and header tags</h1>	
+		</div>
+		<!-- Anything placed within this header tag will be stored within the background image linked in the styles.css file. -->
+	</header>
+	<div class="container-fluid">
+		<p>The above h1 tag is wrapped in two tags. The outer header tag is classed "bgimage". The inner div tag is classed "container". In the styles.css file, "bgimage" is styled to contain a background image that is stored in the images folder, a background position of "center center", a background size of "cover", and a height of 200px. The above h1 tag is classed as "titled" and styled in the css file with the text color of white.</p>
+
+		<!-- Task #1: Create a header tag classed as "back_image". This header tag should contain an h2 tag wrapped in a div tag. The h2 tag will be identified with a class called "main" and the parent div around that h2 tag should be classed "container-fluid" -->
+	</div>
+	<div class="container">
+		<p id="paragraph1">This is a paragraph tag wrapped in a div tag who's class is "container".</p>
+	</div>
+
+
+	<div class="container-fluid">
+		<p id="paragraph2">this is a paragraph tag wrapped in a div tag who's class is "container-fluid"</p>
+		<!-- Task #2: The two p tags shown above have different IDs and colors. Determine how else the above p tags differ. Test your guess by resizing the html page in the browser. -->
+
+		<!-- Fixed Container - As you resize your browser, its width remains intact, until it passes a certain breakpoint (as specified by you), at which time it will resize to the new width for that break point. Content appears to "jump" as it passes breakpoints -->
+
+		<!-- Fluid Container - As you resize your browser, the content spans the full width of the viewport. It will expand and contract fluidly as you resize the browser. >
+	</div>
+
+
+
+
+
+
+
+<!-- jumbotron -->
+
+
+
+
+
+
+
+<!-- responsive grid -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<h3><a href="http://realfoodrecipes4all.blogspot.com/" class="text1">Health food blog</a></h3>
+				<p>This blog shares various food options that are healthy alternatives to many otpions available in the typical American diet. Want to share others? Do so by clicking the share button below.</p>
+				<a href="#" class="btn">Share here!</a>
+			</div>
+
+			<div class="col-sm-3">
+				<h3><a href="jumbotron.html" class="text1">Jumbotron Page</a></h3>
+				<p>The jumbotron is a great way to display a few of our essentials - buttons, text, and images. Take a look and click the link below to learn how to do it yourself!</p>
+				<a href="http://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_jumbotron.cfm" class="btn">Jumbotron Tutorial</a>
+			</div>
+		</div>
+	</div>
+
+
+<!-- CAROUSELS -->
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="images/gymnast1.jpg" alt="gym1" class="img-responsive">
+		<div class="carousel-caption">Gymnstics requires balance.</div>
+		</div>
+
+		<div class="item">
+			<img src="images/gymnast2.jpg" alt="gym1" class="img-responsive">
+			<div class="carousel-caption">Gymnstics requires agility.</div>
+		</div>
+
+		<div class="item">
+			<img src="images/gymnast3.jpg" alt="gym1" class="img-responsive">
+			<div class="carousel-caption">Gymnstics requires strength.</div>
+		</div>
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+
+</div>
+
+	
+</body>
+</html>

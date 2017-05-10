@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+
+	<!-- IE Edge Meta Tag ==> Forces Internet Explorer to use its latest rendering mode. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Viewport to avoid shrinking of text on mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Include JS -->
+<scripted src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+
+	<title>Intro to Bootstrap</title>
+</head>
+
+<!-- Task #1 **BODY TAG & LINKING**: Create a body start tag and an end tag for the body and HTML. Remember that the end tag will capture all content expected to be displayed on the webpage so place the end tags at the very bottom of this page. Lastly, check that all of the information in the head is linked properly so that we can use Bootstrap in conjunction with our CSS and JS code. 
+-->
+
+
+<!-- Task #2 **JUMBOTRON**: 
+	Watch tutorial first: https://www.youtube.com/watch?v=tkQpnxRkn_M
+
+	Create a bootstrap jumbotron below that contains 
+	a background image of 'http://scriptedsummit.com/Content/2016/images/logo-header.png', a paragraph explaining when a developer should use a jumbotron on a web app, and two orange buttons with blue. Use the styles.css file to help you. 
+-->
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 id="jumbotronText">Summer Academy Page</h1>
+			<a class="btn" href="https://www.youtube.com/watch?v=FCpuzFONTIY">Watch Video</a>
+			<a class="btn" href="https://twitter.com/ScriptEdOrg">Find us on Twitter</a>
+			<p>We make responsive websites!</p>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Task #3 **GRIDLAYOUT**: 
+
+Watch tutorial first: https://www.youtube.com/watch?v=Yt4eA2f7iRM
+	
+Create a responsive bootstrap grid system that contains three blocks of content. Keep in mind each block will be evenly distributed over the 12 cells available in the grid. The blocks will each contain an h2 header tag, a paragraph tag with text, and a button. Each button will be a different color and at least one of the cells will have a background color different from the others.
+
+	Detailed instructions:
+	1. Open a div classed 'container'
+	2. Inside of the 'container' div open a div classed '.row'
+	3. Inside of the 'row' div open a div '.col-sm-3 div'
+	4. Inside of the 'col-sm-3' div open an h3 tag that contains an anchor tag linking the following external site: '//docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing'. The text should read 'Summer Academy Info'
+	5. Also inside of the 'col-sm-3' div create a paragraph of text that states 'Welcome to the ScriptEd Summer Academy Website.'
+	6. Lastly, inside of the 'col-sm-3' div create an anchor tag that is a button linking to the following external site: 'https://docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing'
+	7. Ensure that start tags have closing tags that align properly
+		ie:
+			<div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+
+	8. Create two more blocks of text to complete the 3 sections across the 12-unit grid. Follow steps 3 through 7 in order to create each block. 
+
+	**Make sure the 'container' and 'row' div tags from steps 1 and 2 close after all other text..
+-->
+
+
+<div class='container'>
+	<div class="row">
+		<div class="col-sm-3">
+			<h3><a href="#">Summer Academy Info</a></h3>
+			<p>Welcome to the ScriptEd summer Academy Website.</p>
+			<a href="https://docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing"></a>
+		</div>		
+
+		<div class="col-sm-3">
+			<h3>Summer Academy Info</h3>
+			<p>Welcome to the ScriptEd summer Academy Website.</p>
+			<a href="https://docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing"></a>
+		</div>		
+		<div class="col-sm-3">
+			<h3>Summer Academy Info</h3>
+			<p>Welcome to the ScriptEd summer Academy Website.</p>
+			<a href="https://docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing"></a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Task #4: **NAV BAR**
+
+Watch PART OF tutorial first: 0m to 8m of https://www.youtube.com/watch?v=qpWlaOeGZ_4
+
+Open a div classed 'navbar navbar-default navbar-static-top'. Inside of that div Open another div classed 'container'. Lastly, add an anchor tag within the inner div. This anchor tag will have a class of 'navbar-brand' and the text visible to the user will read 'ScritEd Summer Academy'. Close your anchor tag in this section but the two div tags will be the last tags for the nav bar section (after the 'collapsible navbar' section.)
+-->
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a href="#" class="navbar-brand">Chinnell's site</a>
+
+
+		<!-- Create a dropdown button
+		button with a type of 'button', classed as 'navbar-toggle', data-toggle='collapse', and data-target='#exampleSSA'. The data-target will point to the collapsible navbar below.
+		 -->
+
+
+		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example1">
+
+
+
+		 	<!-- Add three span tags classed 'icon-bar' to make lines in the button and close the button tag after. -->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+
+		</button>
+
+		<!-- Collapsible Navbar
+		Open a div classed 'collapse navbar-collapse' and an id of 'exampleSSA'. Within this div add an unordered list classed 'nav navbar-nav navbar-right'. Four of the five list items inside of the unordered list should also be anchor tags that take us to the sites listed below. CREATE appropriate names for each tag by reading them over first.
+
+		Link 1: https://docs.google.com/document/d/138PguW6QJWCgSG62qkKuM6wpR_e-Q_D02ynwkzpMS9I/edit?usp=sharing
+		Link 2: http://bit.ly/ScriptEdRef
+		Link 3: https://v4-alpha.getbootstrap.com/examples/
+		Link 4: https://scripted.org/
+
+		example of linked list item: <li><a href="examplesite.com">Example</a></li>
+
+		The fifth list item will not be a link so do not make it an anchor tag. The list item text will read 'Bootstrap Help'.
+
+		
+		 -->
+
+			<div class="collapse navbar-collapse" id="example1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#contact" data-toggle="modal">More info</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap Help<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>bla</li>
+							<li>blee</li>
+							<li>bloo</li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+
+<!-- Now you can close the 'navbar navbar-default navbar-static-top' and 'container' div tags from this section -->
+		</div>
+	</div>
+
+<!-- Last step!! Move your navegation bar code to the top of the page, directly after the starting body tag.
+
+-->
+
+
+
+
+
+
+
+
+
+<!-- Task #5 **DROPDOWN MENUS**: 
+
+Watch tutorial: https://youtu.be/qpWlaOeGZ_4?t=8m
+
+*Look to previous section called 'NAV BAR' to make dropdown menu edits.
+
+Detailed instructions:
+We will be manipulating the fifth list item currently titled 'Boostrap Help'.
+1. Remove the text  that says 'Bootstrap Help'.
+2. give the list item tag a class of 'dropdown' and press enter a couple times to provide space between the opening and closing tags of this fifth list item.
+3. Inside of this list item create a child element anchor tag with an href of '#'.
+4. Give this child element anchor tag a class of 'dropdown-toggle' and a data-toggle of 'dropdown'.
+5. Insert 'Bootstrap Help' after the open tag and create a closing anchor tag for this child element.
+6. Within the fifth list item and below the child element anchor tag create an unordered list classed 'dropdown-menu'.
+7. Create a list items and anchor tags for the following resources and name them based on the header they are given.
+	Link 1: http://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_jumbotron.cfm
+	Link 2: http://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_carousel.cfm
+	Link 3: http://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_modal.cfm
+8. Add a caret next to the text 'Bootstrap Help' by inserting a 'b' tag that is classed 'caret'.
+9. Close the 'b' tag directly after the open tag.
+-->
+
+
+
+
+
+
+
+<!-- Task #6 **CAROUSELS**: 
+Watch tutorial: https://www.youtube.com/watch?v=R0nkkXkrby0&t=306s
+-->
+<!-- CAROUSELS -->
+
+	<!-- Open a div with an id of 'carouselSSA' and a class of 'carousel'. Don't close out your div here.--> 
+	<div id="myCarousel" class="carousel slide">
+		<!-- Inside that div create an ordered list with a class of 'carousel-indicators'. Don't close out your ordered list here. -->
+		<ol class="carousel-indicators">
+			<!-- Create three list items. The list items inside your ordered list will need a data-target of 'carouselSSA' and a data-slide-to of either "0", "1", or "2" depending on it's placement in the list - ordered numerically. Also, the first item in your list needs a class of 'active'-->
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+
+		<!-- Close out your ordered list on the line below. -->
+		</ol>
+
+		<!-- After the closing tag for the ordered list open a div classed 'carousel-inner' -->
+		<div class="carousel-inner">
+			<!-- Inside the 'carousel-inner' div nest a div element child with the class 'item active'. Close out your 'item active' div -->
+			<div class="item active">
+
+				<!-- Nested inside of the 'item' div create an image tag with a jpeg image linked as it's source. You can choose any image you'd like that represents ScriptEd or coding. Give that image tag an alt value of 'img1' and a class of 'img-responsive'. -->
+				<img src="images/gymnast1.jpg" alt="gym1" class="img-responsive">
+			</div>
+
+			<!-- Find a second image that is relevent to ScriptEd Summer Academy. Make another div classed as "item" and nest an image tag with this second image as it's source inside of this div. Giv that nested image tag an alt value of 'img2' and a class of 'img-responsive'. *Look above at the last two sets of instructions for an example. -->
+
+			<div class="item">
+				<img src="images/gymnast2.jpg" alt="gym1" class="img-responsive">
+				<div class="carousel-caption">Gymnstics requires agility.</div>
+			</div>
+
+
+
+			<!-- Create one more image tag nested inside of a div classed 'item' just as you did with the step above. Doing so will provide you with three images for the carousel. -->
+			<div class="item">
+				<img src="images/gymnast3.jpg" alt="gym1" class="img-responsive">
+				<div class="carousel-caption">Gymnstics requires strength.</div>
+			</div>
+
+		<!-- Now create an anchor tag classed 'carousel-control left' with an href of '#CarouselSSA' and a data-slide of 'prev'. This will create an arrow that, when clicked, allows the user to transition to the previous image in the carousel. Do not close your anchor tag yet. -->
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+
+			<!-- Inside of your anchor tag nest a span tag with a class of 'icon-prev'. Include a closing span tag on the same line and close the parent anchor tag on the line after that. -->
+			<span class="icon-prev"></span>
+		</a>
+
+		<!-- Open one more anchor tag classed 'carousel-control right' with an href of '#myCarousel' and a data-slide of 'next'. This will create an arrow that, when clicked, allows the user to transition to the next image in the carousel. Nest another span tag as you did above but the class will be 'icon-next'. Finally, close your anchor tag on the following line. -->
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+	
+	<!-- Close your 'carouselSSA' div on the line below. -->
+
+
+</div>
+
+
+
+<!-- Task #7 **MODALS**: 
+Watch tutorial: https://www.youtube.com/watch?v=7YJUFaZMS8Q
+-->
+
+<!-- Link an element to your modal by providing that element with an href of '#contact' and a data-toggle of 'modal'. -->
+
+<!-- Open a div classed 'modal fade', an id of 'contact', and a role of 'dialog' -->
+<div class="modal fade" id="contact" role="dialog">
+
+	<!-- Inside the 'modal fade' div open another div classed 'modal-dialog'. -->
+	<div class="modal-dialog"></div>
+
+		<!-- Inside of the 'modal-dialog' div open a third div classed 'modal-content'. -->
+		<div class="modal-content">
+			
+			<!-- Inside of the 'modal-content' div open a fourth div classed 'modal-header'. -->
+			<div class="modal-header">
+				<!-- Create a header size 4 element with the content 'Contact SSA' and add the closing tag on the same line -->
+				<h4>Contact SSA</h4>
+			</div>
+
+			<!-- Close out the 'modal-header' div above this line. Below this line open a div classed 'modal-body' and place a p tag inside of this div that states the following text: 
+
+			'ScriptEd Summer Academy teaches high school students how to code using Bootstrap. The 80 students develop responsive websites for mock clients during their 2.5 weeks in the program. If you would like more information please contact chinnell@scripted.org'
+
+			Close your 'modal-body' div on the line after the paragraph tag.
+
+			-->
+			<div class="modal-body">
+				<p>ScriptEd Summer Academy teaches high school students how to code using Bootstrap. The 80 students develop responsive websites for mock clients during their 2.5 weeks in the program. If you would like more information please contact chinnell@scripted.org</p>
+			</div>
+
+			<!-- Open a div classed 'modal-footer'. Inside that div create two buttons: 
+			First button: open and close a button tag classed 'btn btn-info', and a data-dismiss equal to 'modal'.
+
+			Second button: open and close an anchor tag classed 'btn btn-primary' with an href that links to http://scripted.org
+			
+			Close the 'modal-footer' div tag after the anchor tag.
+			-->
+
+			<div class="modal-footer">
+				<button class="btn btn-info" data-dismiss="modal">Close</button>
+				<a class="btn btn-info" href="http://scripted.org">ScriptEd</a>
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Your closing body tag and closing HTML tag go after this comment. -->

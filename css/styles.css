@@ -1,0 +1,44 @@
+
+.bgimage {
+	background-image: url('../Images/flowers.jpeg');
+	background-position: center center;
+	background-size: cover;
+	height: 200px;
+}
+
+#titled{
+	color: white;
+}
+
+#paragraph1 {
+	color: purple;
+}
+
+#paragraph2 {
+	color: green;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url('http://scriptedsummit.com/Content/2016/images/logo-header.png');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#jumbotronText {
+	color: orange;
+	font-family: 'roboto';
+}
+
+.btn {
+	background-color: orange;
+	color: blue;
+	text-shadow: black 0.05em 0.05em 0.05em;
+}
+
+.text1 {
+	color: #5a2d0c;
+}

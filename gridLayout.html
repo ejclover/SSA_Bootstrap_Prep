@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+	<title>My Example</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container-fluid">		
+<div class="bs-example">
+	<!-- Bootstrap Grid -->
+	<div class="row">
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	  <div class="col-xs-1">.col-xs-1</div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-2">.col-xs-2</div>
+	  <div class="col-xs-3">.col-xs-3</div>
+	  <div class="col-xs-7">.col-xs-7</div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-4">.col-xs-4</div>
+	  <div class="col-xs-4">.col-xs-4</div>
+	  <div class="col-xs-4">.col-xs-4</div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-5">.col-xs-5</div>
+	  <div class="col-xs-7">.col-xs-7</div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-6">.col-xs-6</div>
+	  <div class="col-xs-6">.col-xs-6</div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-12">.col-xs-12</div>
+	</div>	
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Task #1: What happens if we comment out one of the above columns? -->
+
+<!-- You can use multiple class sizes for a given element. For example, you could use class="col-sm-10 col-md-6" to specify 10 columns for small viewports and 6 columns for medium and large viewports. -->
+
+<!-- Task #2: Below create a row of three blocks. The blocks should join on the same line on a small, medium or large screen and separate onto individual rows, across the entire display on an extra small devise -->
+
+<!-- ANSWER -->
+<div>
+	<div class="row">
+		<div class="col-sm-4 col-xs-12 col-md-8">block1</div>
+		<div class="col-sm-4 col-xs-12 col-md-2">block2</div>
+		<div class="col-sm-4 col-xs-12 col-md-2">block3</div>
+	</div>
+</div>
+
+
+<!-- Task #3: Create a grid that has 3 blocks of text. Remember that 
+the bootstrap slots out 12 cells across and we need to section out these cells amongst 3 blocks. -->
+
+<!-- Answer -->
+<div class="container">
+	<div class="row">
+
+		<div class="col-sm-3">
+			<h3><a href="#">Click here</a></h3>
+			<p>Lorem Ipsum is simply dummy text.</p>
+			<a href="#" class="btn btn-info">Read More</a>
+		</div>
+
+		<div class="col-sm-3">
+			<h3><a href="#">Click here</a></h3>
+			<p>Lorem Ipsum is simply dummy text.</p>
+			<a href="#" class="btn btn-info">Read More</a>
+		</div>
+
+		<div class="col-sm-3">
+			<h3><a href="#">Click here</a></h3>
+			<p>Lorem Ipsum is simply dummy text.</p>
+			<a href="#" class="btn btn-info">Read More</a>
+		</div>
+
+		<div class="col-sm-3">
+			<h3><a href="#">Click here</a></h3>
+			<p>Lorem Ipsum is simply dummy text.</p>
+			<a href="#" class="btn btn-info">Read More</a>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!-- Styles (so that we can see the grid) -->
+<style scoped>
+.bs-example  div[class^="col"] {
+	border: 1px solid green;
+	background: #f5f5f5;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	}
+.col-sm-4 {
+	background: #ffe699;
+	border: 1px solid blue;
+}
+</style>
+
+</div>
+		
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Initialize Bootstrap functionality -->
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+</body>
+
